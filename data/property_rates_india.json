@@ -1,0 +1,235 @@
+{
+  "metadata": {
+    "generated": "2026-04-27",
+    "note": "Mix of government circle rates (minimum registration price) and market rates. Circle rates are the legal floor — actual sale prices are typically 20-50% higher. All rates are in INR per sqft. Verify with official state portals before production use.",
+    "sources": [
+      "HexaHome — circle-rate-hmcrr (Noida, Pune, Hyderabad, Gurgaon)",
+      "NoBroker — market rate blogs (Pune, Hyderabad)",
+      "CreditDharma — top 10 cities overview (Delhi, Mumbai, Chennai, Kolkata, Ahmedabad)",
+      "IGR Maharashtra (igreval.maharashtra.gov.in) — Ready Reckoner Rates",
+      "IGRS Telangana — Hyderabad circle rates",
+      "Revenue Dept Haryana — Gurgaon circle rates",
+      "IGRS UP — Noida circle rates"
+    ],
+    "rateTypes": {
+      "circle": "Government-mandated minimum price for registration. Legal floor.",
+      "market": "Actual transaction/asking prices. Higher than circle rates."
+    }
+  },
+  "cityAverages": [
+    { "city": "Mumbai",    "state": "Maharashtra", "avgRatePerSqft": 17060, "rateType": "market" },
+    { "city": "Chennai",   "state": "Tamil Nadu",   "avgRatePerSqft": 12237, "rateType": "market" },
+    { "city": "Gurgaon",   "state": "Haryana",      "avgRatePerSqft": 7280,  "rateType": "circle" },
+    { "city": "Bangalore", "state": "Karnataka",    "avgRatePerSqft": 7279,  "rateType": "market" },
+    { "city": "Hyderabad", "state": "Telangana",    "avgRatePerSqft": 6583,  "rateType": "market" },
+    { "city": "Pune",      "state": "Maharashtra",  "avgRatePerSqft": 6115,  "rateType": "circle" },
+    { "city": "Ahmedabad", "state": "Gujarat",      "avgRatePerSqft": 5839,  "rateType": "market" },
+    { "city": "Kolkata",   "state": "West Bengal",  "avgRatePerSqft": 5514,  "rateType": "market" },
+    { "city": "Delhi",     "state": "Delhi",        "avgRatePerSqft": 5499,  "rateType": "circle" },
+    { "city": "Noida",     "state": "Uttar Pradesh","avgRatePerSqft": 4774,  "rateType": "circle" }
+  ],
+  "cities": [
+    {
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "authority": "IGR Maharashtra (Ready Reckoner Rates)",
+      "lastRevised": "April 2025",
+      "rateType": "circle",
+      "unit": "INR per sqft",
+      "note": "Official RRR rates converted from sqm (÷10.764). Actual market prices are significantly higher.",
+      "localities": [
+        { "locality": "Cuffe Parade",    "zone": "South Mumbai", "minRate": 26048, "maxRate": 60583 },
+        { "locality": "Colaba",          "zone": "South Mumbai", "minRate": 26048, "maxRate": 60583 },
+        { "locality": "Marine Drive",    "zone": "South Mumbai", "minRate": 15311, "maxRate": 41401 },
+        { "locality": "Bandra West",     "zone": "Western Suburbs", "minRate": 12235, "maxRate": 41772 },
+        { "locality": "Andheri East",    "zone": "Western Suburbs", "minRate": 10590, "maxRate": 22630 },
+        { "locality": "Kurla",           "zone": "Central Suburbs", "minRate": 8000,  "maxRate": 14000 },
+        { "locality": "Jogeshwari",      "zone": "Western Suburbs", "minRate": 9000,  "maxRate": 15000 },
+        { "locality": "Chembur",         "zone": "Eastern Suburbs", "minRate": 9000,  "maxRate": 14000 }
+      ]
+    },
+    {
+      "city": "Delhi",
+      "state": "Delhi",
+      "authority": "Revenue Dept, GNCT Delhi",
+      "lastRevised": "2025",
+      "rateType": "circle",
+      "unit": "INR per sqft",
+      "note": "Rates converted from sqm (÷10.764). Vary by colony category (A–H) assigned by revenue dept.",
+      "localities": [
+        { "locality": "DDA / Society Flats (up to 30 sqm)",   "category": "DDA",     "minRate": 4682, "maxRate": 4682 },
+        { "locality": "Private Builder Flats (up to 30 sqm)", "category": "Private", "minRate": 5147, "maxRate": 5147 },
+        { "locality": "Multi-Storey Apartments",              "category": "Premium", "minRate": 8160, "maxRate": 10220 },
+        { "locality": "Vasant Vihar",                         "category": "A",       "minRate": 26006, "maxRate": 29730 },
+        { "locality": "South Delhi (general)",                "category": "A/B",     "minRate": 8000,  "maxRate": 15000 },
+        { "locality": "East Delhi (general)",                 "category": "C/D",     "minRate": 4000,  "maxRate": 7000  },
+        { "locality": "Outer Delhi (general)",                "category": "E/F",     "minRate": 2000,  "maxRate": 5000  }
+      ]
+    },
+    {
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "authority": "IGR Karnataka (Guidance Value)",
+      "lastRevised": "October 2023 (select zones revised March 2025)",
+      "rateType": "market",
+      "unit": "INR per sqft",
+      "note": "Mix of guidance value and market rate data. Official guidance values available via Kaveri Online Services.",
+      "localities": [
+        { "locality": "Lavelle Road",    "zone": "CBD",         "minRate": 20000, "maxRate": 22000 },
+        { "locality": "Indiranagar",     "zone": "East",        "minRate": 10000, "maxRate": 20000 },
+        { "locality": "Koramangala",     "zone": "South",       "minRate": 10000, "maxRate": 18000 },
+        { "locality": "Sarjapur Road",   "zone": "South-East",  "minRate": 9000,  "maxRate": 12000 },
+        { "locality": "HSR Layout",      "zone": "South",       "minRate": 8000,  "maxRate": 13000 },
+        { "locality": "Whitefield",      "zone": "East",        "minRate": 7000,  "maxRate": 11000 },
+        { "locality": "Hebbal",          "zone": "North",       "minRate": 7000,  "maxRate": 10000 },
+        { "locality": "Electronic City", "zone": "South",       "minRate": 4500,  "maxRate": 7500  },
+        { "locality": "Yelahanka",       "zone": "North",       "minRate": 5000,  "maxRate": 8000  },
+        { "locality": "Devanahalli",     "zone": "North",       "minRate": 3500,  "maxRate": 6000  }
+      ]
+    },
+    {
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "authority": "IGRS Telangana",
+      "lastRevised": "August 2025",
+      "rateType": "market",
+      "unit": "INR per sqft",
+      "note": "Includes both circle rates and market rates. Circle rates are 30-40% below market rates in this city.",
+      "localities": [
+        { "locality": "Jubilee Hills",  "zone": "West",    "minRate": 12000, "maxRate": 18000 },
+        { "locality": "Banjara Hills",  "zone": "West",    "minRate": 12000, "maxRate": 17000 },
+        { "locality": "Narsingi",       "zone": "West",    "minRate": 9500,  "maxRate": 13000 },
+        { "locality": "HITEC City",     "zone": "West",    "minRate": 8000,  "maxRate": 13500 },
+        { "locality": "Madhapur",       "zone": "West",    "minRate": 7899,  "maxRate": 11000 },
+        { "locality": "Gachibowli",     "zone": "West",    "minRate": 8000,  "maxRate": 14000 },
+        { "locality": "Kondapur",       "zone": "West",    "minRate": 6970,  "maxRate": 9000  },
+        { "locality": "Shaikpet",       "zone": "West",    "minRate": 7000,  "maxRate": 9500  },
+        { "locality": "Gandhinagar",    "zone": "Central", "minRate": 6000,  "maxRate": 10000 },
+        { "locality": "Kukatpally",     "zone": "North",   "minRate": 5000,  "maxRate": 7500  },
+        { "locality": "Miyapur",        "zone": "North",   "minRate": 6000,  "maxRate": 9000  },
+        { "locality": "Nizampet",       "zone": "North",   "minRate": 5000,  "maxRate": 7500  },
+        { "locality": "Kompally",       "zone": "North",   "minRate": 5000,  "maxRate": 6500  },
+        { "locality": "Cherlapally",    "zone": "East",    "minRate": 6000,  "maxRate": 8000  },
+        { "locality": "Badangpet",      "zone": "South",   "minRate": 4000,  "maxRate": 6000  },
+        { "locality": "Mangalpally",    "zone": "South",   "minRate": 4000,  "maxRate": 5000  },
+        { "locality": "Gagillapur",     "zone": "North",   "minRate": 4000,  "maxRate": 6000  }
+      ]
+    },
+    {
+      "city": "Pune",
+      "state": "Maharashtra",
+      "authority": "IGR Maharashtra",
+      "lastRevised": "April 2025",
+      "rateType": "market",
+      "unit": "INR per sqft",
+      "note": "Market rates from NoBroker. Circle rates (government floor) are lower — see circleRates field.",
+      "localities": [
+        { "locality": "Kalyani Nagar",     "zone": "East",  "minRate": 15000, "maxRate": 22000, "circleRate": null  },
+        { "locality": "Koregaon Park",     "zone": "East",  "minRate": 13257, "maxRate": 22680, "circleRate": null  },
+        { "locality": "Kothrud",           "zone": "West",  "minRate": 13000, "maxRate": 17750, "circleRate": 8364  },
+        { "locality": "Viman Nagar",       "zone": "East",  "minRate": 12400, "maxRate": 16650, "circleRate": null  },
+        { "locality": "Kharadi",           "zone": "East",  "minRate": 9000,  "maxRate": 17000, "circleRate": 4740  },
+        { "locality": "Aundh",             "zone": "North", "minRate": 10000, "maxRate": 13938, "circleRate": null  },
+        { "locality": "Magarpatta",        "zone": "East",  "minRate": 10000, "maxRate": 13639, "circleRate": null  },
+        { "locality": "Baner",             "zone": "North", "minRate": 10000, "maxRate": 15000, "circleRate": 5576  },
+        { "locality": "Wakad",             "zone": "North", "minRate": 9250,  "maxRate": 11000, "circleRate": 5576  },
+        { "locality": "Pimple Saudagar",   "zone": "North", "minRate": 8000,  "maxRate": 11668, "circleRate": null  },
+        { "locality": "Mundhwa",           "zone": "East",  "minRate": 8000,  "maxRate": 12400, "circleRate": null  },
+        { "locality": "NIBM",              "zone": "South", "minRate": 8000,  "maxRate": 15096, "circleRate": null  },
+        { "locality": "Hadapsar",          "zone": "East",  "minRate": 6000,  "maxRate": 8500,  "circleRate": 7435  },
+        { "locality": "Hinjewadi",         "zone": "West",  "minRate": 7000,  "maxRate": 12000, "circleRate": 5000  },
+        { "locality": "Bavdhan",           "zone": "West",  "minRate": 6900,  "maxRate": 10300, "circleRate": null  },
+        { "locality": "Wagholi",           "zone": "East",  "minRate": 6000,  "maxRate": 12000, "circleRate": null  },
+        { "locality": "Undri",             "zone": "South", "minRate": 5000,  "maxRate": 12000, "circleRate": null  },
+        { "locality": "Manjari Khurd",     "zone": "East",  "minRate": 6000,  "maxRate": 8200,  "circleRate": null  },
+        { "locality": "Moshi",             "zone": "North", "minRate": 5000,  "maxRate": 6900,  "circleRate": null  }
+      ]
+    },
+    {
+      "city": "Gurgaon",
+      "state": "Haryana",
+      "authority": "Revenue Department, Haryana",
+      "lastRevised": "August 2025",
+      "rateType": "circle",
+      "unit": "INR per sqft",
+      "localities": [
+        { "locality": "Golf Course Road",    "zone": "South", "minRate": 11152, "maxRate": 11152 },
+        { "locality": "MG Road",             "zone": "Central","minRate": 9758,  "maxRate": 9758  },
+        { "locality": "Sector 56",           "zone": "South", "minRate": 6506,  "maxRate": 6506  },
+        { "locality": "Sector 49",           "zone": "South", "minRate": 5576,  "maxRate": 5576  },
+        { "locality": "Dwarka Expressway",   "zone": "North", "minRate": 5576,  "maxRate": 5576  },
+        { "locality": "Sohna Road",          "zone": "South", "minRate": 5111,  "maxRate": 5111  }
+      ]
+    },
+    {
+      "city": "Noida",
+      "state": "Uttar Pradesh",
+      "authority": "IGRS UP / Noida Authority",
+      "lastRevised": "March 2025",
+      "rateType": "circle",
+      "unit": "INR per sqft",
+      "localities": [
+        { "locality": "Sector 18",  "zone": "Commercial Hub", "minRate": 5111, "maxRate": 5111 },
+        { "locality": "Sector 44",  "zone": "Central",        "minRate": 5111, "maxRate": 5111 },
+        { "locality": "Sector 50",  "zone": "Central",        "minRate": 5111, "maxRate": 5111 },
+        { "locality": "Sector 62",  "zone": "IT Hub",         "minRate": 5111, "maxRate": 5111 },
+        { "locality": "Sector 128", "zone": "South",          "minRate": 5111, "maxRate": 5111 },
+        { "locality": "Sector 137", "zone": "South",          "minRate": 4461, "maxRate": 4461 },
+        { "locality": "Sector 75",  "zone": "Central",        "minRate": 4461, "maxRate": 4461 },
+        { "locality": "Sector 150", "zone": "South",          "minRate": 3716, "maxRate": 3716 }
+      ]
+    },
+    {
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "authority": "IGRS Tamil Nadu (Guideline Value)",
+      "lastRevised": "2025",
+      "rateType": "circle",
+      "unit": "INR per sqft",
+      "note": "Guideline values are government floor prices. Market rates are significantly higher.",
+      "localities": [
+        { "locality": "Boat Club Road",  "zone": "Central",  "minRate": 12000, "maxRate": 18000 },
+        { "locality": "Nungambakkam",    "zone": "Central",  "minRate": 8000,  "maxRate": 13000 },
+        { "locality": "Adyar",           "zone": "South",    "minRate": 7000,  "maxRate": 11000 },
+        { "locality": "Velachery",       "zone": "South",    "minRate": 6000,  "maxRate": 9000  },
+        { "locality": "Porur",           "zone": "West",     "minRate": 5000,  "maxRate": 8000  },
+        { "locality": "Lakshmi Nagar",   "zone": "West",     "minRate": 2100,  "maxRate": 2100  },
+        { "locality": "Arul Nagar",      "zone": "Suburban", "minRate": 1005,  "maxRate": 1005  },
+        { "locality": "Anna Street",     "zone": "Suburban", "minRate": 804,   "maxRate": 804   }
+      ]
+    },
+    {
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "authority": "IGRS West Bengal",
+      "lastRevised": "2025",
+      "rateType": "circle",
+      "unit": "INR per sqft",
+      "note": "Government circle rates converted from sqm (÷10.764). Market rates are higher.",
+      "localities": [
+        { "locality": "Alipore",       "zone": "South",   "minRate": 1179, "maxRate": 1179 },
+        { "locality": "Ballygunge",    "zone": "South",   "minRate": 927,  "maxRate": 927  },
+        { "locality": "Park Street",   "zone": "Central", "minRate": 800,  "maxRate": 1200 },
+        { "locality": "Salt Lake",     "zone": "East",    "minRate": 500,  "maxRate": 800  },
+        { "locality": "Agarpara",      "zone": "North",   "minRate": 244,  "maxRate": 244  }
+      ]
+    },
+    {
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "authority": "IGR Gujarat",
+      "lastRevised": "2025",
+      "rateType": "market",
+      "unit": "INR per sqft",
+      "localities": [
+        { "locality": "Ambawadi",    "zone": "West",    "minRate": 7000,  "maxRate": 10000 },
+        { "locality": "Bokadev",     "zone": "West",    "minRate": 6000,  "maxRate": 9000  },
+        { "locality": "Asarwa",      "zone": "East",    "minRate": 4000,  "maxRate": 6000  },
+        { "locality": "Satellite",   "zone": "West",    "minRate": 6500,  "maxRate": 9500  },
+        { "locality": "Prahlad Nagar","zone": "West",   "minRate": 7000,  "maxRate": 11000 },
+        { "locality": "Nikol",       "zone": "East",    "minRate": 3500,  "maxRate": 5500  },
+        { "locality": "Vatva",       "zone": "South",   "minRate": 3000,  "maxRate": 5000  }
+      ]
+    }
+  ]
+}

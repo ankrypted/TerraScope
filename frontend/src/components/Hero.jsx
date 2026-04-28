@@ -15,7 +15,9 @@ export default function Hero() {
             <option value="all">Pan India</option>
             <option>Mumbai</option>
             <option>Bangalore</option>
-            <option>Delhi NCR</option>
+            <option>Delhi</option>
+            <option>Gurgaon</option>
+            <option>Noida</option>
             <option>Hyderabad</option>
             <option>Chennai</option>
             <option>Pune</option>

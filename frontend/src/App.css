@@ -550,6 +550,207 @@ body {
 }
 .footer-links a:hover { color: white; }
 
+/* ── SEARCH LOADING ── */
+.search-loading {
+  text-align: center;
+  padding: 4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+/* ── SEARCH RESULTS ── */
+.search-results {
+  padding: 5rem 3rem;
+  background: var(--light);
+  min-height: 60vh;
+}
+.results-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+.results-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-top: 0.4rem;
+}
+.results-meta {
+  color: var(--gray);
+  font-size: 0.82rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.04em;
+}
+.clear-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--gray);
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  border-radius: 100px;
+  white-space: nowrap;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.clear-btn:hover { border-color: var(--dark); color: var(--dark); }
+
+.no-results {
+  text-align: center;
+  padding: 5rem 2rem;
+  color: var(--gray);
+  font-size: 0.92rem;
+}
+
+.city-group { margin-bottom: 3rem; }
+.city-group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+.city-group-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.city-group-state {
+  font-size: 0.78rem;
+  color: var(--gray);
+  flex: 1;
+}
+.rate-type-badge {
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.badge-circle {
+  background: #1a3a5c;
+  color: #7eb8f7;
+}
+.badge-market {
+  background: #1a3a1a;
+  color: #7ecf7e;
+}
+
+/* ── RATE INFO BANNER ── */
+.rate-info-banner {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+.rate-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.9rem 1.2rem;
+  flex: 1;
+  min-width: 260px;
+}
+.rate-info-item p {
+  font-size: 0.78rem;
+  color: var(--gray);
+  line-height: 1.6;
+}
+.rate-info-item .rate-type-badge {
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.circle-market-note {
+  font-size: 0.78rem;
+  color: #b45309;
+  background: #fef3c7;
+  border: 1px solid #fde68a;
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.localities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+.locality-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.4rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: default;
+}
+.locality-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.07);
+}
+.locality-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.locality-zone {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.locality-name {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+  line-height: 1.3;
+}
+.locality-rates { display: flex; flex-direction: column; gap: 0.6rem; }
+.rate-range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.rate-label {
+  font-size: 0.68rem;
+  color: var(--gray);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.rate-value {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+.entry-price { color: var(--accent); }
+.rate-circle { color: #1a3a5c; }
+.rate-range--entry {
+  border-top: 1px dashed var(--border);
+  padding-top: 0.6rem;
+  margin-top: 0.2rem;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
   .why-section { grid-template-columns: 1fr; }

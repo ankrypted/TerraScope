@@ -1,16 +1,25 @@
-export default function Hero() {
+import { useState } from 'react'
+
+export default function Hero({ onSearch }) {
+  const [city, setCity] = useState('')
+  const [budget, setBudget] = useState('')
+
+  const handleSearch = () => {
+    onSearch({ city, budget })
+  }
+
   return (
     <section className="hero">
       <div className="hero-content">
-        <p className="hero-label">Pan India Property Search</p>
+        <p className="hero-label">Pan India Property Rate Intelligence</p>
         <h1 className="hero-heading">
-          YOUR DREAM<br />PROPERTY<span className="accent-dot">.</span>
+          KNOW YOUR<br />MARKET<span className="accent-dot">.</span>
         </h1>
         <p className="hero-sub">
-          Find homes, villas, and plots that fit your budget — anywhere in India.
+          Explore government circle rates and real market prices for residential properties — locality by locality, across 10 major Indian cities.
         </p>
         <div className="search-bar">
-          <select className="search-select">
+          <select className="search-select" value={city} onChange={e => setCity(e.target.value)}>
             <option value="">Select City</option>
             <option value="all">Pan India</option>
             <option>Mumbai</option>
@@ -24,15 +33,7 @@ export default function Hero() {
             <option>Kolkata</option>
             <option>Ahmedabad</option>
           </select>
-          <select className="search-select">
-            <option value="">Property Type</option>
-            <option>Apartment</option>
-            <option>Villa</option>
-            <option>Plot</option>
-            <option>Penthouse</option>
-            <option>Commercial</option>
-          </select>
-          <select className="search-select">
+          <select className="search-select" value={budget} onChange={e => setBudget(e.target.value)}>
             <option value="">Your Budget</option>
             <option>Under ₹50L</option>
             <option>₹50L – ₹1Cr</option>
@@ -40,7 +41,7 @@ export default function Hero() {
             <option>₹3Cr – ₹10Cr</option>
             <option>Above ₹10Cr</option>
           </select>
-          <button className="search-btn">SEARCH →</button>
+          <button className="search-btn" onClick={handleSearch}>EXPLORE RATES →</button>
         </div>
       </div>
       <button className="hero-arrow">↗</button>

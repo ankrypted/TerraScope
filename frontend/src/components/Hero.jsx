@@ -44,7 +44,11 @@ export default function Hero({ onSearch }) {
           <button className="search-btn" onClick={handleSearch}>EXPLORE RATES →</button>
         </div>
       </div>
-      <button className="hero-arrow">↗</button>
+      <button
+        className="hero-arrow"
+        aria-label="Scroll to content"
+        onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+      >↗</button>
     </section>
   )
 }

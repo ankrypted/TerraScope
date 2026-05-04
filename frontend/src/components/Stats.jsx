@@ -1,8 +1,8 @@
 const stats = [
-  { num: '12,000+', label: 'Active Listings' },
-  { num: '200+',    label: 'Cities Covered' },
+  { num: '10',          label: 'Cities Covered' },
+  { num: '95+',         label: 'Localities Tracked' },
   { num: '₹10L – ₹50Cr', label: 'Budget Range' },
-  { num: '98%',     label: 'Verified Listings' },
+  { num: '2',           label: 'Rate Types' },
 ]
 
 export default function Stats() {
